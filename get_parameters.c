@@ -7,7 +7,8 @@
 *
 * Return: Formatter
 */
-char *get_parameters(const char *format)
+
+/*char *get_parameters(const char *format)
 {
 	char parameters[100];
 	int i;
@@ -45,5 +46,4 @@ char *get_parameters(const char *format)
 		}
 	}
 	return (parameters);
-}
-
+}*/
