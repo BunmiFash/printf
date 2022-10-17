@@ -51,6 +51,7 @@ int _printf(const char *format, ...)
 					else if (parameters[c] == 'r')
 						count += printreverse(va_arg(list, char *));
 					i++;
+					count--;
 				}
 
 				else
