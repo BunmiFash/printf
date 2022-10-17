@@ -14,6 +14,7 @@ int printdecimal(int n)
 	{
 		_putchar('-');
 		n = -n;
+		count++;
 	}
 	if (n / 10)
 	count += printdecimal(n / 10);
