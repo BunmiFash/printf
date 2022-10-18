@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * printrot - prints 13th letter after a character
+ * @s: character pointer
+ *
+ * Return: printed character
+ */
 int printrot(char *s)
 {
 	int count = 0, i;
@@ -6,7 +12,7 @@ int printrot(char *s)
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int a;
-	
+
 	while (*(s + count) != '\0')
 	{
 		for (i = 0; i < 52; i++)

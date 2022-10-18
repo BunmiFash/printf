@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * printocta - print number in octa
+ * @a: number printed
+ *
+ * Return: count
+ */
 
 int printocta(unsigned int a)
 {
@@ -12,25 +18,25 @@ int b = 0;
 int j = 1;
 int remainder;
 
-while(a != 0) 
+while (a != 0)
 {
-	remainder = a%8;
-	a = a/8;
-	if(b > 8)
+	remainder = a % 8;
+	a = a / 8;
+	if (b > 8)
 	{
-		octalNum2 = octalNum2 + (remainder*j);
+		octalNum2 = octalNum2 + (remainder * j);
 		j = j * 10;
 	}
 	else
 	{
-		octalNum = octalNum + (remainder*i);
-		i = i*10;
+		octalNum = octalNum + (remainder * i);
+		i = i * 10;
 		b++;
 	}
 }
-if(octalNum2)
-	count += _printf("%d",octalNum2);
-count += _printf("%d",octalNum);
+if (octalNum2)
+	count += _printf("%d", octalNum2);
+count += _printf("%d", octalNum);
 
 return (count);
 }
