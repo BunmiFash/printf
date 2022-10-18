@@ -1,22 +1,35 @@
 #include "main.h"
+/**
+ * printdecimal - prints decimal
+ * @n: number printed
+ *
+ * Return: count
+ */
 
 int printdecimal(int n)
 {
 	int count = 0;
 
-	if (n < 0) 
+	if (n < 0)
 	{
 		_putchar('-');
-		count ++;
+		count++;
 		n = -n;
 	}
-	if (n/10)
-	count += printdecimal(n/10);
+	if (n / 10)
+	count += printdecimal(n / 10);
 
-	_putchar(n%10 + '0');
-	count ++;
+	_putchar (n % 10 + '0');
+	count++;
 	return (count);
 }
+
+/**
+ * printdecimal2 - prints decimals
+ * @n: number printed
+ *
+ * Return: count
+ */
 
 int printdecimal2(int n)
 {
@@ -29,7 +42,7 @@ if (n == 0)
 	c = 1;
 while (n)
 {
-	n = n/10;
+	n = n / 10;
 	c++;
 }
 if (c < 6)
@@ -37,7 +50,7 @@ if (c < 6)
 	space = 6 - c;
 	for (i = 0; i < space; i++)
 	{
-	 	_printf(" ");
+		_printf(" ");
 		count++;
 	}
 }

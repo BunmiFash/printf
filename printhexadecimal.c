@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * printhexadecimal - prints number in hexadecimal
+ * @a: number printed
+ *
+ * Return: count
+ */
 
 int printhexadecimal(unsigned int a)
 {
