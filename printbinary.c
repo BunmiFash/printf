@@ -1,6 +1,9 @@
 #include "main.h"
 /**
 * printbinary - prints binary digits
+* @n:  digits
+*
+* Return: count
 */
 int dec(long n);
 
@@ -12,14 +15,16 @@ int printbinary(unsigned int n)
 	int rem;
 	int i = 0;
 
-	while (n!=0) 
+	while (n != 0)
 	{
 		rem = n % 2;
 		n /= 2;
 		arr[i] = rem;
 		i++;
-		/*bin += rem * i;
-		i *= 10;*/
+		/*
+		 * bin += rem * i;
+		 * i *= 10;
+		 */
 
 	}
 
@@ -34,19 +39,26 @@ int printbinary(unsigned int n)
 
 	return (count);
 }
+/**
+ * dec - decimals
+ * @n: decimal numbers
+ * Return: count
+ */
 
 int dec(long n)
+
 {
 	int count = 0;
+
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	if (n/10)
-		count += dec((n/10));
+	if (n / 10)
+		count += dec((n / 10));
 
-	_putchar(n%10 + '0');
+	_putchar(n % 10 + '0');
 	count++;
 	return (count);
 }

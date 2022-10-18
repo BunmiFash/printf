@@ -1,27 +1,35 @@
 #include "main.h"
 
+/**
+ * count_args - function that counts arguments
+ * @n: array of characters counted
+ *
+ * Return: count
+ */
+
 int count_args(const char *n)
 {
 	int count = 0;
 	int i;
+
 	for (i = 0; n[i] != '\0'; i++)
 	{
 		if (n[i] == '%')
 		{
 			if (n[i + 1] == 'd')
-			count ++;
+			count++;
 			else if (n[i + 1] == 'c')
-			count ++;
+			count++;
 			else if (n[i + 1] == 'i')
-			count ++;
+			count++;
 			else if (n[i + 1] == 'u')
-			count ++;
+			count++;
 			else if (n[i + 1] == 'x')
-			count ++;
+			count++;
 			else if (n[i + 1] == 'r')
-			count ++;
+			count++;
 			else if (n[i + 1] == 's')
-			count ++;
+			count++;
 		}
 	}
 	return (count);
