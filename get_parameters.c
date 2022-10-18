@@ -1,19 +1,12 @@
 #include "main.h"
-
-/**
-* get_parameters - checks for formatters
-*
-* @format: String containing formatters
-*
-* Return: Formatter
-*/
-
-/*char *get_parameters(const char *format)
+/*
+char *get_parameters(const char *format)
 {
+
+	
 	char parameters[100];
 	int i;
 	int b = 0;
-
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
@@ -46,4 +39,5 @@
 		}
 	}
 	return (parameters);
-}*/
+}
+*/
