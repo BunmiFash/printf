@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * check_format - function to check format
+ * @n: format to be checked
+ *
+ * Return: 0
+ */
+
 int check_format(char n)
 {
 if (n == 'd')
@@ -29,12 +36,12 @@ if (n == 'X')
 if (n == 'S')
 	return (1);
 /*
-if (n == 's')
-	return (1);
-if (n == 's')
-	return (1);
-if (n == 's')
-	return (1);
-*/
+ * if (n == 's')
+ *	return (1);
+ * if (n == 's')
+ *	return (1);
+ * if (n == 's')
+ *	return (1);
+ */
 return (0);
 }
